@@ -1,36 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+    <link rel="stylesheet" href="./styles/style.css" />
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <div class="u-container">
+      <div class="article">
+        <div class="article__image">
+          <img src="./images/drawers.jpg" alt="Images for drawers" />
+          
+        </div>
+        <div class="article__content">
+          <h1 class="main-heading">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="tagline">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="infobox">
+            <div class="infobox__user">
+              <div class="infobox__user-img">
+                <img
+                  src="./images/avatar-michelle.jpg"
+                  alt="Avatar for Michelle"
+                />
+              </div>
+              <div class="infobox__user-desc">
+                <h4 class="user-name">Michelle Appleton</h4>
+                <p class="user-date">28 Jun 2020</p>
+              </div>
+            </div>
+            <div class="infobox__share" id="shareButton">
+              
+              <!-- sharing tooltip box -->
+              <div class="share hide" id="sharingMenu">
+                <p class="share__text">SHARE</p>
+                <ul class="share__lists">
+                  <li class="share__list">
+                    <a href="#">
+                      <img src="./images/icon-facebook.svg" alt="Facebook ICon">
+                    </a>
+                  </li>
+                  <li class="share__list">
+                    <a href="#">
+                      <img src="./images/icon-twitter.svg" alt="Twitter ICon">
+                    </a>
+                  </li>
+                  <li class="share__list">
+                    <a href="#">
+                      <img src="./images/icon-pinterest.svg" alt="Pinterest ICon">
+                    </a>
+                  </li>
+                </ul>
+                <div class="share__arrow">&nbsp;</div>
+              </div>
+              
+              <img
+                src="./images/icon-share.svg"
+                alt="Share Icon"
+                class="first"
+              />
+              <img
+                src="./images/icon-share-white.svg"
+                alt="Share Icon"
+                class="second"
+              />
+            </div>
+          </div>
 
-  Michelle Appleton
-  28 Jun 2020
+          <div class="sharebox--small hide" id="smallSharingMenu">
+            <p>SHARE</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/icon-facebook.svg" alt="FaceBook Icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon-pinterest.svg" alt="Pinterest Icon">
+                </a>
+              </li>
+            </ul>
+            <div class="infobox__share" id="shareButtonSmall">
+              <img src="./images/icon-share-white.svg" alt="Share Icon"  />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="u-container footer">
+        <p class="footer__line u-center">
+          Made with ❤️ by
+          <a href="https://github.com/abhu-A-J" target="__blank" class="link">
+           Siddhika Rakshe.
+          </a>
+        </p>
+        <p class="footer__credits u-center">
+          The UI Challenge is taken from
+          <a href="https://www.frontendmentor.io/challenges" target="__blank" class="link" >
+             FrontEnd Mentor Challenges.
+          </a>
+        </p>
+        
+      </div>
+    </footer>
+    <script defer src="./scripts/index.js"></script>
+  </body>
 </html>
